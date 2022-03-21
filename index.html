@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <div class="padre">
+        <header class="header">
+            <div class="titulo">
+                <h1>POKEDEX</h1>
+            </div>
+            <div class="texto-principal">
+                
+            </div>
+        </header>
+        
+        <section class="section">
+            <div class="articulos">
+                
+                <div class="buscar">
+                    <input type="text" placeholder="Captura nombre pokemon" id="pokeName" name="pokeName">
+                    <button class="button-24" onclick="fetchPokemon()">Buscar</button>
+                </div>
+                
+                <article class="article">
+                    <div class="rectangulo">
+                        <img src="./images/camera.jpg" alt="Pokemon" id="pokeImg" width="50%">
+                    </div>
+                    <div class="circulo"></div> 
+                </article>
+
+                <article class="article">
+                    <h2>CARACTERÍSTICAS</h2>
+                    <label for="text" id="id">Clave:</label>
+                    <label for="text" id="pokeId"></label>
+                    <br>
+                    <label for="text" id="nombre">Pokemon:</label>
+                    <label for="text" id="pokemon"></label>    
+                    <br>
+                    <label for="text" id="altura">Altura:</label>
+                    <label for="text" id="pokeHeight"></label>
+                    <br>
+                    <label for="text" id="altura">Peso:</label>
+                    <label for="text" id="pokeWeight"></label>
+                    <br>
+                    <label for="text" id="tipo">Tipo:</label>
+                    <label for="text" id="pokeType"></label>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+        <div class="articulos">
+                
+            <article class="article">
+               <div>
+                   <h2>ESTADÍSTICAS</h2>
+                   <br>
+               </div>
+
+               <div class="chart-wrap verticalmente">  
+                <div class="grid">
+                    <div id="HP" class="bar" style="--bar-value:0%;" data-name="HP" title="0%"></div>
+                    <div id="AT" class="bar" style="--bar-value:0%;" data-name="Ataque" title="0%"></div>
+                    <div id="DE" class="bar" style="--bar-value:0%;" data-name="Defensa" title="0%"></div>
+                    <div id="AE" class="bar" style="--bar-value:0%;" data-name="Ataque Esp." title="0%"></div>
+                    <div id="DS" class="bar" style="--bar-value:0%;" data-name="Defensa Esp." title="0%"></div>
+                    <div id="VE" class="bar" style="--bar-value:0%;" data-name="Velocidad" title="0%"></div>
+                </div>
+              </div>
+            </article>
+           
+            <article class="article">
+                <div>
+                    <h2>HABILIDADES</h2>
+                </div>
+                <div>
+                    <label for="text" id="1">1:</label>
+                    <label for="text" id="hab1"></label>
+                    <br>
+                    <label for="text" id="2">2:</label>
+                    <label for="text" id="hab2"></label>    
+                </div>
+                <div>
+
+                </div>
+            </article>
+        </div>
+        </section>
+
+        <footer class="footer">
+            <script src="pokedex.js"></script>
+            <h3>DERECHOS RESERVADOS</h3>
+            <h3>COPYRIGTH 2022</h3>
+        </footer>
+
+    </div>
+
+</body>
+</html>
